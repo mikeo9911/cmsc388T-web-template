@@ -14,5 +14,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              echo "hello world"
-              git clone github.com:mikeo9911/mikeo9911.github.io.git
+              git clone git@github.com:mikeo9911/mikeo9911.github.io.git
