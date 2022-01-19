@@ -1,9 +1,10 @@
-name: clone workflow
+name: update workflow
 on:
-  workflow_dispatch
+  push:
+    branches: [master]
 jobs:
   job_one:
-    name: Clone
+    name: Update
     runs-on: ubuntu-latest
     steps:
       - name: testing
@@ -14,4 +15,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              git clone github.com:mikeo9911/mikeo9911.github.io.git
+              cd terpwebsite
+              git pull
