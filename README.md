@@ -1,3 +1,5 @@
 # cmsc388T-web-template
 
-Website Template for Project 3
+TerpConnect - https://terpconnect.umd.edu/~morlando/mikeo9911.github.io/
+
+GitHub Pages Site - https://mikeo9911.github.io
