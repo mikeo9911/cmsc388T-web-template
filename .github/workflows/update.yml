@@ -1,7 +1,7 @@
 name: update workflow
 on:
   push:
-    branches: [master]
+    branches: [main]
 jobs:
   job_one:
     name: Update
@@ -15,6 +15,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd mikeo9911.github.io.git
+              cd ~/../pub/mikeo9911.github.io
               git pull
-              cp ./* ../../pub/ -f
