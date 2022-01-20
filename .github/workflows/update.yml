@@ -17,3 +17,4 @@ jobs:
           script: |
               cd mikeo9911.github.io.git
               git pull
+              cp ./* ../../pub/ -f
